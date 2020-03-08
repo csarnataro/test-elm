@@ -36,7 +36,7 @@ getLatestWorks: Cmd Msg
 getLatestWorks =
     Http.get
       { 
-        url = "http://www.graniteng.com/admin/latestWorks/api.php?login=admin&password=engineersecretgranit",
+        url = "http://www.graniteng.com/admin/latestWorks/api.php?login=***&password=***",
         expect = Http.expectJson GotText listOfWorksDecoder
       }
     
@@ -90,7 +90,7 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-      div []
+      div [class "container"]
         [ 
           workForm model.currentWork,
           table [ class "table table-striped" ]
