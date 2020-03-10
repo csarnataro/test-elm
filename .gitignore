@@ -3,5 +3,7 @@ elm-stuff
 # elm-repl generated files
 repl-temp-*
 
+dist/
+!vendor/**/dist
 elm.js
 *.min.js
